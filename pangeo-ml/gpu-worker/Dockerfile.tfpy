@@ -1,0 +1,6 @@
+FROM tensorflow/tensorflow:latest-gpu-py3
+MAINTAINER Brian Groenke
+RUN python3 -m pip install --upgrade pip \
+    && python3 -m pip install tensorflow_probability \
+    && python3 -m pip install dask[complete]
+CMD /bin/bash

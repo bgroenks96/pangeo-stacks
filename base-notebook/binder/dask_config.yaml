@@ -26,6 +26,10 @@ kubernetes:
   worker-template:
     spec:
       restartPolicy: Never
+      tolerations:
+      - key: "dedicated"
+        value: "worker"
+        effect: "NoSchedule"
       containers:
         - name: dask-${JUPYTERHUB_USER}
           image: ${JUPYTER_IMAGE_SPEC}
@@ -40,10 +44,10 @@ kubernetes:
             - '60'
           resources:
             limits:
-              cpu: "1.75"
+              cpu: 2
               memory: 7G
             requests:
-              cpu: 1
+              cpu: 2
               memory: 7G
 
 labextension:

@@ -1,0 +1,34 @@
+name: pangeo-ml
+channels:
+  - conda-forge
+dependencies:
+  # core scipy packages
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - xarray
+  - sparse
+  # data science
+  - anaconda::tensorflow=2.0.0
+  - anaconda::tensorflow-probability=0.8.0
+  - pytorch-cpu
+  - mlflow
+  # extra visualization tools
+  - seaborn
+  # geospatial
+  - iris
+  - cartopy
+  - basemap
+  - geopandas
+  - netcdf4
+  # zarr-related
+  - zarr
+  - gcsfs
+  - s3fs
+  # jupyter-related
+  - ipykernel
+  - nbdime
+  - nbconvert
+  # misc
+  - tqdm
