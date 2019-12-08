@@ -1,2 +1,2 @@
-FROM gcr.io/thesis-research-255223/pangeo/base-notebook-onbuild
+FROM pangeo/base-notebook-onbuild:2019.10.30
 MAINTAINER Brian Groenke
