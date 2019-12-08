@@ -10,10 +10,11 @@ dependencies:
   - xarray
   - sparse
   # data science
+  - mlflow
+  - scikit-learn
   - anaconda::tensorflow-gpu=2.0.0
   - anaconda::tensorflow-probability=0.8.0
   - pytorch-gpu
-  - mlflow
   # extra visualization tools
   - seaborn
   # geospatial
