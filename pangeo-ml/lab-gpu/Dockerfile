@@ -1,4 +1,4 @@
-FROM pangeo/base-notebook-onbuild:2019.10.30
+FROM pangeo/base-notebook-onbuild:latest
 MAINTAINER Brian Groenke
 ENV LD_LIBRARY_PATH=/usr/local/nvidia/lib:/usr/local/nvidia/lib64
 ENV NVIDIA_VISIBLE_DEVICES=all

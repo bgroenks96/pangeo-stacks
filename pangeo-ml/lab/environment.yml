@@ -11,8 +11,8 @@ dependencies:
   - sparse
   # data science
   - scikit-learn
-  - anaconda::tensorflow=2.0.0
-  - anaconda::tensorflow-probability=0.8.0
+#  - anaconda::tensorflow=2.0.0
+#  - anaconda::tensorflow-probability=0.8.0
   - pytorch-cpu
   - mlflow
   # extra visualization tools

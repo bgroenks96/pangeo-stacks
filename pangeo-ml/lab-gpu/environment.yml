@@ -9,11 +9,12 @@ dependencies:
   - pandas
   - xarray
   - sparse
+  - bottleneck
   # data science
   - mlflow
   - scikit-learn
-  - anaconda::tensorflow-gpu=2.0.0
-  - anaconda::tensorflow-probability=0.8.0
+#  - anaconda::tensorflow-gpu=2.0.0
+#  - anaconda::tensorflow-probability=0.8.0
   - pytorch-gpu
   # extra visualization tools
   - seaborn
@@ -32,3 +33,8 @@ dependencies:
   - nbdime
   # misc
   - tqdm
+  - pytest
+  # pip
+  - pip:
+    - tensorflow==2.1.0
+    - tensorflow_probability==0.9.0

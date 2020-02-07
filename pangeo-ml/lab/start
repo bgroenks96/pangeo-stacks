@@ -1,0 +1,4 @@
+#!/bin/sh
+
+mkdir -p /home/jovyan/mlflow
+mlflow server -h 0.0.0.0 --backend-store-uri file:///home/jovyan/mlflow

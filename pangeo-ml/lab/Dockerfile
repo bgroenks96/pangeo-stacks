@@ -1,2 +1,2 @@
-FROM pangeo/base-notebook-onbuild:2019.10.30
+FROM pangeo/base-notebook-onbuild:latest
 MAINTAINER Brian Groenke
