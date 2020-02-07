@@ -5,7 +5,7 @@ dependencies:
   # core scipy packages
   - numpy
   - scipy
-  - matplotlib
+  - matplotlib-base
   - pandas
   - xarray
   - sparse
@@ -14,15 +14,16 @@ dependencies:
   - scikit-image
   - scikit-learn
   - dask-ml
-  - tensorflow
-  - keras
-  - pytorch-cpu
+# NOTE: will move these to pangeo-ml image
+#  - tensorflow
+#  - keras
+#  - pytorch-cpu
   # pyviz
   - holoviews
   - panel
+  - jupyter-panel-proxy
   - geoviews
   - hvplot
-  - geoviews
   - datashader
   - seaborn
   - altair
@@ -30,8 +31,8 @@ dependencies:
   - folium
   - vega
   - vega_datasets
-  - palettable
-  - cmocean
+#  - palettable
+#  - cmocean
   # geospatial
   - iris
   - cartopy
@@ -50,7 +51,7 @@ dependencies:
   - metpy
   - satpy
   - gsw
-  - eofs
+#  - eofs
   - esmpy
   - xesmf
   - windspharm
@@ -60,19 +61,22 @@ dependencies:
   - intake-esm
   - fsspec
   - intake-stac
+  - sat-stac
+  - sat-search
   # zarr-related
   - zarr
   - numcodecs
   - python-blosc
   - lz4
-  - gcsfs
+  - gcsfs>=0.5.2
   - s3fs
   - tiledb-py
   # jupyter-related
   - ipyleaflet
+#  - watermark
   # xarray-related
   - xgcm
-  - xrft
+#  - xrft
   - xhistogram
   - xlrd
   - xrviz
@@ -82,3 +86,7 @@ dependencies:
   # misc
   - python-wget
   - prefect
+  - pip:
+    - intake_geopandas
+    - git+https://github.com/NCAR/intake-esm.git@master
+    - git+https://github.com/hhuangwx/cmaps.git#egg=cmaps
